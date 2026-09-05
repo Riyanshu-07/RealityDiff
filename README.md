@@ -1,35 +1,28 @@
 # RealityDiff
 
-AI-powered real-time scene change analyzer.
+> AI-powered real-time scene change analyzer that detects what actually changed in a physical environment.
 
-Detect what was:
-🟢 ADDED
-🟡 MOVED
-🔴 REMOVED
+RealityDiff is a computer vision system designed to move beyond frame-by-frame object detection.
 
-## Tech Stack
+Instead of only asking:
 
-- YOLO26
-- BoT-SORT
-- OpenCV
-- Python
-- Supabase
-- Streamlit
+**"What objects are visible right now?"**
 
-## Architecture
+RealityDiff asks:
 
-Camera
-↓
-YOLO26
-↓
-BoT-SORT
-↓
-Scene State
-↓
-Temporal Memory
-↓
-Change Detection
-↓
-Supabase
-↓
-Streamlit Dashboard
+**"What changed compared to the previous state?"**
+
+It combines object detection, multi-object tracking, temporal state management, spatial reasoning, and persistent event storage to identify meaningful scene changes.
+
+---
+
+## The Problem
+
+Traditional object detection works on individual frames.
+
+For example:
+
+```text
+Frame 1 → Bottle detected
+Frame 2 → Bottle detected
+Frame 3 → Bottle detected
