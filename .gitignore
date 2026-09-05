@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+
+# Environment Variables / Secrets
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# Model / Large Files
+*.pt
+*.pth
+*.onnx
